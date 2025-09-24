@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include <random>
 #include <chrono>
 
@@ -27,7 +28,6 @@ int main()
         board[x][y] = 'O';
     }
 
-    // Print initial board
     for (const auto& row : board) {
         for (char cell : row) {
             cout << cell << " ";
@@ -74,6 +74,5 @@ int main()
             cout << "\n";
         }
     }
-
     return 0;
 }
